@@ -14,9 +14,6 @@ def integration(a, b, N):
         sum_right += abs(math.sin(x))*dx
     return sum_left, sum_right
 
-def function_to_integrate(x):
-    return abs(math.sin(x))
-
 @app.route('/')
 def hello():
     return "<p>Hello !</p>"
