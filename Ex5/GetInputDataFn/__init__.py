@@ -16,7 +16,7 @@ def main(fileName):
     default_credential = DefaultAzureCredential()
 
     # Create the BlobServiceClient object
-    blob_service_client = BlobServiceClient.from_connection_string("DefaultEndpointsProtocol=https;AccountName=lab2ex5;AccountKey=DefaultEndpointsProtocol=https;AccountName=lab2ex5;AccountKey=o8e1gD+kMe1lagvSogM++KhFmHTTn+8ofKaUWVBXmrFNDdsga/qaBuYExLN+JBlK/zoti2p+Iupf+AStxDUNzA==;EndpointSuffix=core.windows.net")
+    blob_service_client = BlobServiceClient.from_connection_string("DefaultEndpointsProtocol=https;AccountName=#############;AccountKey=###############;")
 
     container_client = blob_service_client.get_container_client(container='documents')
     blob_list = container_client.list_blobs()
